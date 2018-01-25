@@ -38,7 +38,7 @@ public class Person2 {
 			sb.append(c);
 		}
 		return sb.toString();
-	  return null;
+
 	}
 	/**
 	 * Return a string rep of this object
