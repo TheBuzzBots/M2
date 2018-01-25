@@ -30,10 +30,10 @@ public class Person2 {
 	 * @return the modified string
 	 */
 	private String calc(String input) {
-		String[] scram = s.split("");
+		String[] scram = input.split("");
 		List<String> letters = Arrays.asList(scram);
 		Collections.shuffle(letters);
-		StringBuilder sb = new StringBuilder(s.length());
+		StringBuilder sb = new StringBuilder(input.length());
 		for (String c : letters) {
 			sb.append(c);
 		}
