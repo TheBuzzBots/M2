@@ -30,8 +30,14 @@ public class Person2 {
 	 * @return the modified string
 	 */
 	private String calc(String input) {
-	  //Person 2 put your implementation here
-	  return null;
+		String[] scram = s.split("");
+		List<String> letters = Arrays.asList(scram);
+		Collections.shuffle(letters);
+		StringBuilder sb = new StringBuilder(s.length());
+		for (String c : letters) {
+			sb.append(c);
+		}
+		return sb.toString();
 	}
 	/**
 	 * Return a string rep of this object
